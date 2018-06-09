@@ -1,0 +1,16 @@
+// Variable Overrides 
+$secondary:   grey;
+  
+$theme-colors: (
+  "primary": orangered
+  );
+
+//Bootstrap sass files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-transform: uppercase;
+}
