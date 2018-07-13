@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bootstrap 4 Layout</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Work+Sans:400" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<head>
+    <title>Bootstrap 4 Layout</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Work+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-    <body>
-        <div class="container">
-         
-    <!-- -->
-        
-        <h1>couples camp</h1> 
-    <!-- -->
+    <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!--Header-->
+        <header>
+            <div id="address" class="container mb-3">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-md-auto">
+                        <i class="fas fa-map-marker-alt mr-2"></i>123 Broadway, NY</div>
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse bg-inverse navbar-expand-md navbar-light">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand mr-2">
+                    </a>
+                    <h3 class="text-white font-weight-bold text-uppercase ml-3">Grace</h3>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-uppercase  ml-auto ">
+                            <li class="nav-item pr-4">
+                                <a href="#home" class="nav-link text-white ">Home</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#about" class="nav-link text-white">Pages</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#authors" class="nav-link text-white">Sermons</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#contact" class="nav-link text-white">Events</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#contact" class="nav-link text-white">Blog</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#contact" class="nav-link text-white">Gallery</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#contact" class="nav-link text-white">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fas fa-search pr-4"></i>
+                    <button class="btn btn-primary btn-donate">Donate</button>
+                </div>
+            </nav>
+           <!--Hero--> 
+            <div class="hero ">
+            
+                <div class="arrows">
+                    
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+                <div class="container ">
+                    <div class="row d-flex flex-column justify-content-center align-items-center">
+                        
+                            <h5 class="hero__pretitle">June 22, 2015</h5>
+                   
+                            <h1 class="hero__title">couples camp</h1>
+                        
+                        <h2 class="hero__subtitle">Connect and grow together</h2>
+                        <button class="btn btn-lg btn-primary hero__button">Register today</button>
+                        <div class="dots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span></div>
+                    </div>
+                </div> 
+       
+          
+                
         </div>
+        </header>
+        <!-- -->
+    </div>
 
-       <script src="/js/jquery.min.js"></script>
-        <script src="/js/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-    </body>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
 </html>
