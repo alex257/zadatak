@@ -2228,12 +2228,21 @@ h2,h3{page-break-after:avoid}@page{size:a3}body{min-width:992px !important}.cont
 .navbar{display:none}.badge{border:1px solid #000}.table{border-collapse:collapse !important}
 .table td,.table th{background-color:#fff !important}.table-bordered th,.table-bordered td{border:1px solid #dee2e6 !important}
 .table-dark{color:inherit}.table-dark th,.table-dark td,.table-dark thead th,.table-dark tbody+tbody{border-color:#dee2e6}
-.table .thead-dark th{color:inherit;border-color:#dee2e6}}header{background-color:#6c757d;background-size:cover;background-image:url("../img/bird.jpg");background-position:center;background-blend-mode:multiply;position:relative;overflow:hidden;color:#fefffd;min-height:600px}
-header h3{font-size:1.5rem;font-weight:500;letter-spacing:1.3px}header ul{font-size:.8rem;font-weight:700;letter-spacing:1px}
-header .btn-donate{letter-spacing:1px;text-transform:uppercase;font-size:.8rem;padding:.3rem 1rem;font-weight:700;border-radius:none}
+.table .thead-dark th{color:inherit;border-color:#dee2e6}}.btn{border-radius:.1em}
+header{background-color:#6c757d;background-size:cover;background-image:url("../img/bird.jpg");background-position:center;background-blend-mode:multiply;position:relative;overflow:hidden;color:#fefffd;min-height:600px}
+header h3{font-size:1.5rem;font-weight:500;letter-spacing:1.3px}header ul{font-size:.8rem;font-weight:700;letter-spacing:1px;-webkit-box-sizing:border-box;box-sizing:border-box}
+header a.active{border:1px solid #63718c}header .btn-donate{letter-spacing:1px;text-transform:uppercase;font-size:.8rem;padding:.3rem 1rem;font-weight:700}
 #address{font-weight:600;padding-top:20px}.navbar-brand{position:relative;height:27px;width:18px;border:2.5px solid #f5fafd;border-radius:1px;margin-bottom:10px}
 .navbar-brand:after{content:"";position:absolute;top:-8px;left:6px;background:#f5fafd;height:26px;width:3px}
-.hero{text-transform:uppercase;margin-top:130px}.hero__title{font-family:'Lato',sans-serif;font-weight:800;font-size:5rem}
+.hero{text-transform:uppercase;margin-top:130px;position:relative}.hero__title{font-family:'Lato',sans-serif;font-weight:800;font-size:5rem}
 .hero__pretitle{font-weight:700;font-size:1rem}.hero__subtitle{font-weight:600;text-transform:none;margin-bottom:60px;margin-top:20px}
-.hero__button{padding:1rem 2.8rem;border-radius:none;margin-bottom:60px;border-radius:.1em;text-transform:uppercase;font-weight:600;font-size:1.1rem}
+.hero__button{padding:1rem 2.8rem;border-radius:none;margin-bottom:60px;text-transform:uppercase;font-weight:700;font-size:.9rem;letter-spacing:1.2px}
 .hero:before{content:"";display:block;position:absolute}
+.arrows i.fa-long-arrow-alt-left{position:absolute;top:30%;left:50px;border:1px solid #63718c;padding:20px}
+.arrows i.fa-long-arrow-alt-right{position:absolute;top:30%;right:50px;border:1px solid #63718c;padding:20px}
+.dots{margin-bottom:15px}.dots span{background-color:white;border-radius:50%;width:8px;height:8px;display:inline-block;margin:8px 8px 50px 8px}
+span.active{-webkit-box-shadow:0 0 5px 3px #d4c8d4;box-shadow:0 0 5px 3px #d4c8d4}
+.fluid-subheader{text-transform:none;background-color:#708090}.fluid-subheader .subheader{padding-top:25px}
+.fluid-subheader .grace-date span:first-child{font-size:2rem;font-weight:600;display:inline-block;font-family:'Montserrat',sans-serif}
+.fluid-subheader .grace-date span:nth-child(2){font-size:.8rem;padding-bottom:8px}
+.fluid-subheader .fa-clock{margin-right:10px}

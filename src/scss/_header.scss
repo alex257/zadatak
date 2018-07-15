@@ -23,6 +23,11 @@ header{
     font-size: .8rem;
     font-weight: 700;
     letter-spacing: 1px;
+    box-sizing: border-box;
+  }
+  a.active{
+    //padding: 1px 14px;
+    border: 1px solid #63718c;
   }
 
   .btn-donate{
@@ -31,7 +36,7 @@ header{
     font-size: .8rem;
     padding: 0.3rem 1rem;
     font-weight: 700;
-    border-radius: 0.1em;
+    
   }
 }
 
@@ -84,7 +89,6 @@ header{
     padding: 1rem 2.8rem;
     border-radius: none;
     margin-bottom: 60px;
-    border-radius: 0.1em;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
@@ -102,16 +106,20 @@ header{
   position: absolute;
 }*/
 
-.fa-long-arrow-alt-left{
+.arrows i.fa-long-arrow-alt-left{
   position: absolute;
   top: 30%;
-  left: 70px;
+  left: 50px;
+  border: 1px solid #63718c;
+  padding: 20px;
 }
 
-.fa-long-arrow-alt-right{
+.arrows i.fa-long-arrow-alt-right{
   position: absolute;
   top: 30%;
-  right: 70px;
+  right: 50px;
+  border: 1px solid #63718c;
+  padding: 20px;
 }
 
 .dots{
@@ -122,10 +130,90 @@ header{
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 8px;
+    margin: 8px 8px 50px 8px;
     
   }
 }
 span.active{
   box-shadow: 0px 0px 5px 3px rgba(212,200,212,1);
 }
+
+.fluid-subheader{
+  text-transform: none;
+  background-color: #708090;
+  
+  .subheader{
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  .grace-date span:first-child{
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .grace-date span:nth-child(2){
+   font-size: .8rem;
+   padding-bottom: 8px;
+   padding-top: 0;
+   margin-top: -6px;
+}
+  .fa-clock{
+    margin-right: 10px;
+    font-size: .8rem;
+  }
+
+  .grace-address{
+    position: relative;
+  }
+
+  .grace-address::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -55px;
+    width: 1.5px;
+    height: 67px;
+    background-color: darkgrey;
+  }
+
+  .fa-map-marker-alt{
+    font-size: .8rem;
+  }
+
+  .grace-address p{
+    font-size: .9rem;
+    margin-bottom: 0;
+    margin-top: .3rem;
+  }
+
+  button{
+    background: transparent;
+    border: 2px solid darkgray;
+    font-size: .8rem;
+    padding: 17px 35px;
+    margin-left: -70px;
+    letter-spacing: .9px;
+  }
+   
+  .fa-long-arrow-alt-left{
+    position: relative;
+  }
+
+  .fa-long-arrow-alt-left:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 22px;
+    top: -10px;
+    bottom: 0;
+    width: 1.5px;
+    height: 40px;
+    background-color: darkgrey;
+  }
+
+}
+
+
+
