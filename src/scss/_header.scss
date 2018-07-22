@@ -10,8 +10,6 @@ header{
   color: #fefffd;
   min-height: 600px;
 
-  //background-color: #969eab;
-  //background-image: linear-gradient(to right, #969eab 0%, #333 100%),url('../img/bird.jpg');
   
   h3{
     font-size: 1.5rem;
@@ -33,8 +31,6 @@ header{
   .btn-donate{
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: .8rem;
-    padding: 0.3rem 1rem;
     font-weight: 700;
     
   }
@@ -83,16 +79,12 @@ header{
     text-transform: none;
     margin-bottom: 60px;
     margin-top: 20px;
+    letter-spacing: 1.1px;
 
   }
   &__button{
-    padding: 1rem 2.8rem;
-    border-radius: none;
     margin-bottom: 60px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: 1.2px;
+    
   }
   &:before{
     content: "";
@@ -145,30 +137,35 @@ span.active{
   .subheader{
     padding-top: 25px;
     padding-bottom: 15px;
-  }
+  
 
-  .grace-date span:first-child{
+  &__date span:first-child{
     font-size: 1.7rem;
     font-weight: 600;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
+    
   }
-  .grace-date span:nth-child(2){
+  &__date span:nth-child(2){
    font-size: .8rem;
    padding-bottom: 8px;
    padding-top: 0;
    margin-top: -6px;
 }
+  &__time{
+    color: darkgray;
+
+  }
   .fa-clock{
     margin-right: 10px;
     font-size: .8rem;
   }
 
-  .grace-address{
+  &__address{
     position: relative;
   }
 
-  .grace-address::before{
+  &__address::before{
     content: '';
     display: block;
     position: absolute;
@@ -182,7 +179,7 @@ span.active{
     font-size: .8rem;
   }
 
-  .grace-address p{
+  &__address p{
     font-size: .9rem;
     margin-bottom: 0;
     margin-top: .3rem;
@@ -205,14 +202,14 @@ span.active{
     content: '';
     display: block;
     position: absolute;
-    left: 22px;
+    left: 26px;
     top: -10px;
     bottom: 0;
     width: 1.5px;
     height: 40px;
     background-color: darkgrey;
   }
-
+}
 }
 
 

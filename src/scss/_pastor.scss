@@ -1,0 +1,71 @@
+section#pastor{
+  margin-bottom: 0;
+}
+.fluid-pastor{
+  background: url("../img/bible-reading.jpeg");
+  background-size: cover;
+  //opacity: .9;
+  padding: 100px 0;
+  
+  color: white;
+  .pastor{
+    
+
+  h6{
+    padding-bottom: 40px;
+  }
+  .line{
+    background-color: white; 
+  }
+  h2{
+    position: relative;
+    font-size: 2.2rem;
+    padding-bottom: 25px;
+    i{
+      font-size: .9rem;
+    }
+  }
+  /*h2:before{
+    content: 'f10e';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+
+  }*/
+  &__podcast{
+    i{
+    border: 1px solid white;
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    }
+    .fa-play__first{
+      border:none;
+      padding:17px;
+    }
+    h5{
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .progress{
+      width: 100%;
+      height: 6px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border-radius: 0;
+      margin-bottom: 10px;
+    }
+    hr{
+      background: transparentize(white, 0.7);
+      height: 1px;
+      width: 350px;
+      margin-top: -5px;
+    }
+  
+    .podcast__time{
+      font-weight: 600;
+    }
+  }
+}
+}

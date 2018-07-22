@@ -4,6 +4,72 @@
   //font-size: 60px;
   //text-transform: uppercase;
 //}
+$text-color-gray: darkgray;
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+
 .btn{
   border-radius: 0.1em;
 }
+.btn--small{
+  padding: 0.3rem 1rem;
+  font-size: .8rem;  
+}
+
+.btn--large{
+  padding: 1rem 2.8rem;
+  border-radius: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 1.2px;
+}
+
+
+section{
+  margin: 100px 0;
+  //
+  h6{
+    //position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    
+  }
+  .line{
+    width: 50px;
+    height: 3px;
+    background-color: #ff6a49;
+  }
+}
+
+
+/*.sectionbase{
+  &__col{
+    margin: 100px 0;
+
+  }
+  
+h6{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    
+  }
+  h6:before{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff6a49;
+    top: 25%;
+    left: -20%;
+
+}
+}*/

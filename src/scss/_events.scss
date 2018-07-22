@@ -1,0 +1,50 @@
+.fluid-events{
+  background: url("../img/blueberry1.jpeg");
+  background-size: cover;
+  padding: 100px 0;
+  color: white;
+  //font-family: 'Montserrat', sans-serif;
+  .line{
+    background-color: white;
+  }
+  .events{
+    &__plan{
+      background: transparent;
+      border: 2px solid transparentize( white, 0.5);
+      //border: 2px solid white;
+      margin-bottom: 25px;
+    }
+    &__date{
+      width: 73px;
+      height: auto;
+    } 
+    &__date span:first-child{
+      font-size: 1.8rem;
+      padding: 10px 10px 0 10px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    &__date span:nth-child(2){
+      font-size: .6rem;
+      padding: 0 10px 20px 10px;
+      margin-top: -6px;
+      font-weight: 600;
+    }
+
+    i{
+    margin: 20px 25px 40px 25px;
+    font-size: 1.2rem;
+    }
+    p{
+    margin-top: 15px;
+    font-size: 0.8rem;  
+    }
+    h5{
+      font-weight: 600;
+    }
+    h6{
+      padding-bottom: 40px;
+    }
+  }                 
+}
+

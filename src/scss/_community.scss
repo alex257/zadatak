@@ -1,0 +1,19 @@
+#community{
+  padding: 5% 0;
+
+  color: white;
+  //background-color: #ff6a49;
+  background: url("../img/beautiful.jpg"), #ff6a49;
+  background-size: cover;
+  background-blend-mode: multiply;
+  p{
+    padding: 30px 0;
+  }
+  button{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    
+  }
+}

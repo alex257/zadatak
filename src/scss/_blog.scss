@@ -1,0 +1,35 @@
+.blog{
+  //font-family: 'Montserrat', sans-serif;
+  h6{
+    padding-bottom: 40px;
+  }
+  h5{
+    padding: 25px 0;
+    font-weight: 600;
+
+  }
+  img{
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  &__date{
+    position: absolute;
+    bottom: 51.5%;
+    left: 4%;
+  }
+  &__date span:first-child{
+    font-size: 1.6rem;
+    //padding: 10px 10px 0 10px;
+    font-weight: 600;
+    display: inline-block;
+    color: white;
+  }
+  &__date span:nth-child(2){
+    font-size: .5rem;
+    padding: 0 10px 5px 10px;
+    margin-top: -6px;
+    font-weight: 600;
+    color: white;
+  }
+}
