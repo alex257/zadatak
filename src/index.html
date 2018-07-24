@@ -17,15 +17,17 @@
     <div class="main-container">
         <!--Header-->
         <header>
-            <div id="address" class="container mb-3">
+            <div id="address" class="container mb-3 address">
                 <div class="row">
-                    <div class="col"></div>
-                    <div class="col-md-auto">
-                        <i class="fas fa-map-marker-alt mr-2"></i>123 Broadway, NY</div>
+                    <div class="col-lg-10"></div>
+                    <div class="col-md-auto col-lg-2 d-flex justify-content-between">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <p>123 Broadway, NY</div>
+                    </p>
                 </div>
             </div>
             <nav class="navbar navbar-inverse bg-inverse navbar-expand-md navbar-light">
-                <div class="container">
+                <div class="container header__container">
                     <a href="index.html" class="navbar-brand mr-2">
                     </a>
                     <h3 class="text-white font-weight-bold text-uppercase ml-3">Grace</h3>
@@ -75,7 +77,7 @@
                 <div class="container ">
                     <div class="row d-flex flex-column justify-content-center align-items-center">
 
-                        <h5 class="hero__pretitle">June 22, 2015</h5>
+                        <h5 class="hero__pretitle">Jun 22, 2015</h5>
 
                         <h1 class="hero__title">couples camp</h1>
 
@@ -162,27 +164,27 @@
                     <div class="col-lg-4">
                         <div class="d-flex ">
                             <i class="fas fa-church fa-2x pr-3 d-flex align-self-center"></i>
-                            <h5>Our Community</h5>
+                            <h5 class="pl-4">Our Community</h5>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
+                        <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
                             voluptatem fugit deserunt itaque saepe nobis.</p>
                         <button class="btn text-uppercase btn--small">More</button>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex">
                             <i class="far fa-heart fa-2x  pr-3 d-flex align-self-center"></i>
-                            <h5>Church Mission</h5>
+                            <h5 class="pl-4">Church Mission</h5>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
+                        <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
                             voluptatem fugit deserunt itaque saepe nobis.</p>
                         <button class="btn text-uppercase btn--small">More</button>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex">
                             <i class="fas fa-user-plus fa-2x pr-3 d-flex align-self-center"></i>
-                            <h5>Join a Group</h5>
+                            <h5 class="pl-4">Join a Group</h5>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
+                        <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae minus? Officiis
                             voluptatem fugit deserunt itaque saepe nobis.</p>
                         <button class="btn text-uppercase btn--small">More</button>
                     </div>
@@ -211,13 +213,19 @@
                 <div class="row d-flex flex-wrap gallery__pictures">
 
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
-                        <figure class="gallery__item gallery__item--column-four active">
-                            <a id="link-photo" href="img/foto1.jpeg" data-width="1300" data-height="900">
-                                <img class="gallery__item" src="img/foto1.jpeg" width="400" height="500" alt="Photo1">
-                            </a>
-                        </figure>
+                            <div class="gallery__item  gallery__item--column-four active">
+                                    <img src="img/foto1.jpeg" width="400" height="500" alt="" class="gallery__img">
+                                    <div class="d-flex flex-column hover-div">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#events"><i class="fas fa-link d-flex align-self-center"></i></a>
+                                   <a href="img/foto1.jpeg" data-width="1300" data-height="900"><i class="fas fa-search-plus"></i></a>
+                                    </div>
+                                    <h4>Holy&nbsp;spirit:&nbsp;Strategic<p class="d-flex justify-content-center align-self-center">think</p></h4>
+                                    </div></div>
+            
+ 
                     </div>
-
+                    
                     <div class="col-lg-4 d-flex align-content-between flex-wrap">
                         <figure class="gallery__item">
                             <a class="link-photo" href="img/foto2.jpeg" data-width="1300" data-height="900">
@@ -344,9 +352,9 @@
             </div>
 
         </section>
- <!--end of events -->
+        <!--end of events -->
 
- <!--blog -->
+        <!--blog -->
         <section id="blog">
             <div class="container blog">
                 <div class="row">
@@ -405,9 +413,9 @@
                     </div>
                 </div>
         </section>
-<!--end of blog -->
+        <!--end of blog -->
 
-<!--pastor -->
+        <!--pastor -->
         <section id="pastor" class="">
             <div class="container-fluid fluid-pastor">
                 <div class="container pastor">
@@ -431,41 +439,44 @@
                             <img src="img/old-man.jpg" alt="pastor" width="250" height="380">
                         </div>
                         <div class="col-lg-5">
-                            <h2>
-                                <i class="fas fa-quote-right"></i>Every mountain <br> top is within <br>
-                                reach if you just <br> keep climbing.
-                                <i class="fas fa-quote-left"></i>
+                            <h2>Every mountain
+                                <br> top is within
+                                <br> reach if you just
+                                <br> keep climbing.
                             </h2>
                             <cite>John McCovey</cite>
                         </div>
                         <div class="col-lg-4 d-flex flex-column pastor__podcast">
                             <div>
                                 <div class="d-flex">
-                                <i class="fas fa-play bg-primary fa-play__first"></i>
-                                <h5 class="text-uppercase">Holy spirit: Strategic think</h5></div>
+                                    <i class="fas fa-play bg-primary fa-play__first"></i>
+                                    <h5 class="text-uppercase">Holy spirit: Strategic think</h5>
+                                </div>
                                 <div class="d-flex flex-row">
-                                        <div class="progress ">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width:20%">
-                                                  <span class="sr-only">20% </span>
-                                                </div> </div>  
-                                <span class="">02.45/45.56</span>
-                            </div>
-                                <p class="podcast__time">Jun 22,2015.</p>
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                            <span class="sr-only">20% </span>
+                                        </div>
+                                    </div>
+                                    <span class="">02.45&nbsp;/&nbsp;45.56</span>
+                                </div>
+                                <p class="podcast__time">Jun 22, 2015.</p>
                             </div>
                             <hr>
                             <div>
                                 <div class="d-flex">
-                                <i class="fas fa-play "></i>
-                                <h5 class="text-uppercase">3 areas all of us struggle to trust God with</h5></div>
-                                <p class="podcast__time">Jun 22,2015.</p>
+                                    <i class="fas fa-play "></i>
+                                    <h5 class="text-uppercase">3 areas all of us struggle to trust God with</h5>
+                                </div>
+                                <p class="podcast__time">Jun 22, 2015.</p>
                             </div>
-<hr>
+                            <hr>
                             <div>
-                            <div class="d-flex">
-                                <i class="fas fa-play "></i>
-                                <h5 class="text-uppercase">It's time for a comeback</h5></div>
-                                <p class="podcast__time">Jun 22,2015.</p>
+                                <div class="d-flex">
+                                    <i class="fas fa-play "></i>
+                                    <h5 class="text-uppercase">It's time for a comeback</h5>
+                                </div>
+                                <p class="podcast__time">Jun 22, 2015.</p>
                             </div>
                             <hr>
                         </div>
@@ -473,74 +484,219 @@
                 </div>
             </div>
         </section>
-<!--end of pastor -->
+        <!--end of pastor -->
 
-<!--contact -->
-<section id="contact">
-    <div class="container-fluid bg-primary">
-        <div class="container contact">
-        <div class="row d-flex justify-content-around align-items-center">
-       
-        <i class="fas fa-user-plus fa-2x"></i>
-        <h4>New Here?</h4>
-        <p>Find out how, where and when we workship. We hope to see you soon!</p>
-       
-        <button class="btn contact__btn btn--large btn-primary">Join a group</button>
-    
-    </div>    
-    </div>
-    </div>
-    <div class="container-fluid">
-        <div id="map"></div>  
-    </div>
-</section>
+        <!--contact -->
+        <section id="contact">
+            <div class="container-fluid bg-primary">
+                <div class="container contact">
+                    <div class="row d-flex justify-content-around align-items-center">
 
-<!--end of contact -->
+                        <i class="fas fa-user-plus fa-2x"></i>
+                        <h4>New Here?</h4>
+                        <p>Find out how, where and when we workship. We hope to see you soon!</p>
 
-<!--footer -->
-<footer class="footer">
-  <div class="row d-flex align-items-center">
-<div class="col-lg-9 d-flex align-items-center justify-content-center">      
-<p><span class="text-primary">Ancora</span> &copy; 2015 All Rights Reserved <span class="text-primary">Terms of Use</span> and <span class="text-primary">Privacy Policy</span></p></div>
-<div class="col-lg-3">
-<div class="footer__links d-flex justify-content-end align-items-center ">
-        <div class="footer__div"><a href="#"><i class="fab fa-facebook text-muted "></i></div>
-    </a>
-    <div class="footer__div"><a href="#"><i class="fab fa-twitter text-muted "></i></a></div>
-    <div class="footer__div"><a href="#"><i class="fab fa-instagram text-muted "></i></a></div>
-    <div class="footer__div"><a href="#"><i class="fab fa-linkedin text-muted "></i></a></div>
-    <div class="footer__div"><a href="#"><i class="fab fa-google-plus-g text-muted "></i></a></div>
-</div>
-</div>
-  </div> 
-</footer>
+                        <button class="btn contact__btn btn--large btn-primary">Join a group</button>
 
- </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!--end of contact -->
+
+        <!--footer -->
+        <footer class="footer">
+            <div class="row d-flex align-items-center">
+                <div class=" footer__text col-lg-4 d-flex align-items-center justify-content-end">
+                    <p>
+                        <span class="text-primary">Ancora</span> &copy; 2015 All Rights Reserved
+                        <span class="text-primary">Terms of Use</span> and
+                        <span class="text-primary">Privacy Policy</span>
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer__links d-flex align-items-center justify-content-center">
+                        <div class="footer__div">
+                            <a href="#">
+                                <i class="fab fa-facebook text-muted "></i>
+                        </div>
+                        </a>
+                        <div class="footer__div">
+                            <a href="#">
+                                <i class="fab fa-twitter text-muted "></i>
+                            </a>
+                        </div>
+                        <div class="footer__div">
+                            <a href="#">
+                                <i class="fab fa-instagram text-muted "></i>
+                            </a>
+                        </div>
+                        <div class="footer__div">
+                            <a href="#">
+                                <i class="fab fa-linkedin text-muted "></i>
+                            </a>
+                        </div>
+                        <div class="footer__div">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g text-muted "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </div>
         <script>
             // Initialize and add the map
             function initMap() {
-              // The location 
-              var broadway = {lat: 40.7088387, lng: -74.0133216};
-               
-               
-              // The map
-              var map = new google.maps.Map(
-                  document.getElementById('map'), {
-          center: {lat: 40.7088387, lng: -74.0133216},
-          zoom: 12,
-          styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#c8d7d4"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#070707"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
-                });
+                // The location 
+                var broadway = {
+                    lat: 40.7088387,
+                    lng: -74.0133216
+                };
 
-              // The marker
-              var marker = new google.maps.Marker({position: broadway, map: map});
+
+                // The map
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        center: {
+                            lat: 40.7088387,
+                            lng: -74.0133216
+                        },
+                        zoom: 12,
+                        styles: [{
+                            "featureType": "all",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "weight": "2.00"
+                            }]
+                        }, {
+                            "featureType": "all",
+                            "elementType": "geometry.stroke",
+                            "stylers": [{
+                                "color": "#9c9c9c"
+                            }]
+                        }, {
+                            "featureType": "all",
+                            "elementType": "labels.text",
+                            "stylers": [{
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "all",
+                            "stylers": [{
+                                "color": "#f2f2f2"
+                            }]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "landscape.man_made",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "all",
+                            "stylers": [{
+                                "saturation": -100
+                            }, {
+                                "lightness": 45
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#eeeeee"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "color": "#7b7b7b"
+                            }]
+                        }, {
+                            "featureType": "road",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "simplified"
+                            }]
+                        }, {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.icon",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "transit",
+                            "elementType": "all",
+                            "stylers": [{
+                                "visibility": "off"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [{
+                                "color": "#46bcec"
+                            }, {
+                                "visibility": "on"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#c8d7d4"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "color": "#070707"
+                            }]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        }]
+                    });
+
+                // The marker
+                var marker = new google.maps.Marker({
+                    position: broadway,
+                    map: map
+                });
             }
-                </script>
+        </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_HKC2m8E5--bEntjKjJxHiqlU6Lu9mx4&callback=initMap"
-                type="text/javascript"></script>
+            type="text/javascript"></script>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
-        
+
 
 </body>
 

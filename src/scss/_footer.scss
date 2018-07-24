@@ -7,11 +7,19 @@
     height: 23px;
     border-radius: 50%;
     background:transparentize( lightgray, 0.6);
+    margin-right: 15px;
+  }
+  &__text{
+    font-size: .8rem;
+  }
+  &__links{
+    margin-left: 220px;
+    margin-bottom: 5px;
   }
   i{
     border-radius: 50%;
     opacity: .6;
-    padding-right: 20px;
+    font-size: 1.2rem;
     
   }
   i:hover{

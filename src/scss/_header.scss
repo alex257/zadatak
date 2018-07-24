@@ -8,8 +8,12 @@ header{
   position: relative;
   overflow: hidden;
   color: #fefffd;
+  color: white;
   min-height: 600px;
 
+  .header__container{
+    margin-top: -15px;
+  }
   
   h3{
     font-size: 1.5rem;
@@ -19,9 +23,11 @@ header{
   
   ul{
     font-size: .8rem;
-    font-weight: 700;
     letter-spacing: 1px;
     box-sizing: border-box;
+    li{
+      font-weight: 700;
+    }
   }
   a.active{
     //padding: 1px 14px;
@@ -36,9 +42,18 @@ header{
   }
 }
 
-#address{
+.address{
   font-weight: 600;
-  padding-top: 20px;  
+  padding-top: 20px;
+  font-size: .8rem;
+  letter-spacing: .7px;
+  
+  i{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: .7rem;
+    
+  }
 }
 
 .navbar-brand{
@@ -67,12 +82,14 @@ header{
   &__title{
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 5rem;
-   
+    font-size: 5.5rem;
+    letter-spacing: 6px;
     } 
   &__pretitle{
     font-weight: 700;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; 
+    letter-spacing: 1px;
   }
   &__subtitle{
     font-weight: 600;
@@ -80,10 +97,13 @@ header{
     margin-bottom: 60px;
     margin-top: 20px;
     letter-spacing: 1.1px;
+    font-size: 1.7rem;
+    //font-family: 'Worksans', sans-serif;
 
   }
   &__button{
     margin-bottom: 60px;
+    font-weight: 600;
     
   }
   &:before{
@@ -100,7 +120,7 @@ header{
 
 .arrows i.fa-long-arrow-alt-left{
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50px;
   border: 1px solid #63718c;
   padding: 20px;
@@ -108,7 +128,7 @@ header{
 
 .arrows i.fa-long-arrow-alt-right{
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 50px;
   border: 1px solid #63718c;
   padding: 20px;
@@ -132,19 +152,20 @@ span.active{
 
 .fluid-subheader{
   text-transform: none;
-  background-color: #708090;
+  background-color: $subheader-color;
   
   .subheader{
     padding-top: 25px;
     padding-bottom: 15px;
   
+  h6{
+      font-size: 1rem;
+    }
 
   &__date span:first-child{
     font-size: 1.7rem;
     font-weight: 600;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    
   }
   &__date span:nth-child(2){
    font-size: .8rem;
@@ -153,8 +174,7 @@ span.active{
    margin-top: -6px;
 }
   &__time{
-    color: darkgray;
-
+    color: $text-color-gray;
   }
   .fa-clock{
     margin-right: 10px;
@@ -163,6 +183,8 @@ span.active{
 
   &__address{
     position: relative;
+
+    
   }
 
   &__address::before{
@@ -180,9 +202,12 @@ span.active{
   }
 
   &__address p{
-    font-size: .9rem;
+    font-size: .8rem;
     margin-bottom: 0;
     margin-top: .3rem;
+  }
+  &__address h6{
+    font-size: .8rem;
   }
 
   button{
@@ -193,6 +218,12 @@ span.active{
     margin-left: -70px;
     letter-spacing: .9px;
   }
+  button:hover{
+    background: transparentize(darkgrey, 0.7);
+   
+    outline: none;
+  }
+
    
   .fa-long-arrow-alt-left{
     position: relative;

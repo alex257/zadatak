@@ -6,7 +6,6 @@
   h5{
     padding: 25px 0;
     font-weight: 600;
-
   }
   img{
     width: 100%;
@@ -15,7 +14,7 @@
   }
   &__date{
     position: absolute;
-    bottom: 51.5%;
+    bottom: 48.4%;
     left: 4%;
   }
   &__date span:first-child{
@@ -31,5 +30,8 @@
     margin-top: -6px;
     font-weight: 600;
     color: white;
+  }
+  p{
+    font-size: .9rem;
   }
 }

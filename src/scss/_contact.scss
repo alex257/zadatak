@@ -21,7 +21,8 @@
     border: 2px solid transparentize(white, 0.6);
 }
   &__btn:hover{
-    border: none;
+    background: transparentize(darkgray, 0.8);
+    
   }
   }
 

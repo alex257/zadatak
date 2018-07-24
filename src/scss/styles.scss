@@ -1,13 +1,16 @@
 // Variable Overrides 
 
 $theme-colors: (
-  "primary": #ff6a49,
+  "primary":  #ff6a49,
   "secondary": #777988
   );
+
+$primary: #ff6a49; 
 
 
 //Bootstrap sass files
 @import "node_modules/bootstrap/scss/bootstrap";
+//Sass Partials
 @import "base";
 @import "header";
 @import "welcome";
@@ -20,6 +23,6 @@ $theme-colors: (
 @import "footer";
 
 
-//
+
 
 
