@@ -8,37 +8,73 @@ header{
   position: relative;
   overflow: hidden;
   color: #fefffd;
-  color: white;
+  //color: white;
   min-height: 600px;
 
   .header__container{
     margin-top: -15px;
   }
   
-  h3{
+  .logo-grace{
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1.3px;
+    @include media-breakpoint-down(lg) { 
+      font-size: 1.2rem;
+      display: flex;
+      align-self: center;
+      }
+    @include media-breakpoint-down(md) { 
+        font-size: 1rem;
+        }  
   }
   
   ul{
     font-size: .8rem;
     letter-spacing: 1px;
     box-sizing: border-box;
+    @include media-breakpoint-down(lg) { 
+      font-size: .6rem;
+      margin: 0 25px;
+
+      } 
+      @include media-breakpoint-down(md) { 
+        font-size: .6rem;
+        margin: 0 30px;
+  
+        }   
     li{
       font-weight: 700;
+      
+      @include media-breakpoint-down(lg){ 
+        font-size: .6rem;
+        margin-right: -5px;
     }
   }
   a.active{
     //padding: 1px 14px;
     border: 1px solid #63718c;
+    @include media-breakpoint-down(md) {
+      border: none;
+     }
   }
+ 
+  li i{
+    @include media-breakpoint-down(lg) {
+      font-size: .6rem; 
+     }
+    }
 
   .btn-donate{
     letter-spacing: 1px;
+    font-size: .7rem;
     text-transform: uppercase;
     font-weight: 700;
-    
+    margin-top: -5px;
+    @include media-breakpoint-down(lg) {
+      font-size: .6rem;
+      margin-right: -5px;
+     }
   }
 }
 
@@ -47,12 +83,15 @@ header{
   padding-top: 20px;
   font-size: .8rem;
   letter-spacing: .7px;
+  @include media-breakpoint-down(lg) {
+    font-size: .6rem;
+   }
   
   i{
     margin-top: 3px;
-    margin-left: 10px;
+    margin-left: -8px;
     font-size: .7rem;
-    
+   
   }
 }
 
@@ -62,7 +101,7 @@ header{
   width: 18px;
   border: 2.5px solid #f5fafd;
   border-radius: 1px;
-  margin-bottom: 10px;
+  //margin-bottom: 10px;
   &:after{
     content: "";
     position: absolute;
@@ -82,14 +121,27 @@ header{
   &__title{
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 5.5rem;
+    font-size: 5.6vw;
     letter-spacing: 6px;
+    @include media-breakpoint-down(md) {
+      font-size: 3.2rem;
+     }
+     @include media-breakpoint-down(sm) {
+      font-size: 2.2rem;
+     } 
+     @media screen and (max-width: 360px) {
+      font-size: 1.7rem;
+     }
     } 
   &__pretitle{
     font-weight: 700;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif; 
     letter-spacing: 1px;
+    @include media-breakpoint-down(md) {
+      font-size: .8rem;
+      font-weight: 600;
+    }
   }
   &__subtitle{
     font-weight: 600;
@@ -98,12 +150,26 @@ header{
     margin-top: 20px;
     letter-spacing: 1.1px;
     font-size: 1.7rem;
-    //font-family: 'Worksans', sans-serif;
+    @include media-breakpoint-down(md) {
+      font-size: 1.4rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.1rem;
+      margin-bottom: 80px;
+      margin-top: 10px;
+      font-weight: 500;
 
+
+    }
   }
   &__button{
     margin-bottom: 60px;
     font-weight: 600;
+    @include media-breakpoint-down(md) {
+     padding: .7rem 1.7rem;
+     font-size: .7rem;
+
+    }
     
   }
   &:before{
@@ -114,9 +180,6 @@ header{
   }
 }
 
-/*.arrows {
-  position: absolute;
-}*/
 
 .arrows i.fa-long-arrow-alt-left{
   position: absolute;
@@ -124,6 +187,10 @@ header{
   left: 50px;
   border: 1px solid #63718c;
   padding: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: .7rem;
+    padding: 10px;
+   }
 }
 
 .arrows i.fa-long-arrow-alt-right{
@@ -132,6 +199,10 @@ header{
   right: 50px;
   border: 1px solid #63718c;
   padding: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: .7rem;
+    padding: 10px;
+  }
 }
 
 .dots{
@@ -157,21 +228,98 @@ span.active{
   .subheader{
     padding-top: 25px;
     padding-bottom: 15px;
+    @include media-breakpoint-down(md) {
+      font-size: .7rem;
+    }
+
+  &__row{
+    flex-wrap: nowrap;
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+  }
+  
+  &__column--second{
+    @include media-breakpoint-down(md) {
+      //justify-content: center;
+      //align-items: center;
+      //padding-top: 15px;
+      margin-right: 20px;
+     }
+     @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      padding-top: 10px;
+    }
+  }
+
+  &__column--third {
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      padding-top: 10px; 
+}
+.break{
+  display: none;
+  @include media-breakpoint-down(lg) {
+    display: block;
+}
+  @include media-breakpoint-down(lg) {
+  display: none;
+}
+}
+}
+  &__column--fourth{
+    @include media-breakpoint-down(md) {
+      //justify-content: center;
+      //align-items: center;
+      //padding: 15px 0;
+      margin-right: 30px;
+     }
+     @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      padding-top: 10px;
+    } 
+  }
+  &__column--fifth{
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      padding-top: 10px;
+  }
+}
   
   h6{
       font-size: 1rem;
+      @include media-breakpoint-down(md) {
+        font-size: .8rem;
+      }
     }
+  &__date{
+    @include media-breakpoint-down(lg) { 
+      flex-wrap: nowrap;
+      display: flex;
+      padding: 11px 9px;
+     }
+     @include media-breakpoint-down(md) { 
+      margin-left: -30px;
+     }
+     
+  }
 
   &__date span:first-child{
     font-size: 1.7rem;
     font-weight: 600;
     display: inline-block;
+    @include media-breakpoint-down(md) {
+      font-size: 1.1rem;
+    }
   }
   &__date span:nth-child(2){
    font-size: .8rem;
    padding-bottom: 8px;
    padding-top: 0;
    margin-top: -6px;
+   @include media-breakpoint-down(md) {
+    font-size: .7rem;
+  }
 }
   &__time{
     color: $text-color-gray;
@@ -183,7 +331,6 @@ span.active{
 
   &__address{
     position: relative;
-
     
   }
 
@@ -195,6 +342,9 @@ span.active{
     width: 1.5px;
     height: 67px;
     background-color: darkgrey;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   .fa-map-marker-alt{
@@ -217,10 +367,21 @@ span.active{
     padding: 17px 35px;
     margin-left: -70px;
     letter-spacing: .9px;
+    @include media-breakpoint-down(lg) {
+      font-size: .6rem;
+      margin-left: 22px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: .6rem;
+      margin-left: 2px;
+    }
+    @media screen and (max-width: 390px) {
+      padding: 7px 15px;
+      font-size: .5rem;
+     }
   }
   button:hover{
     background: transparentize(darkgrey, 0.7);
-   
     outline: none;
   }
 
@@ -239,9 +400,16 @@ span.active{
     width: 1.5px;
     height: 40px;
     background-color: darkgrey;
+    @include media-breakpoint-down(lg) {
+      left: 22px;
+    }
+    @media screen and (max-width: 360px) {
+      height: 30px;
+     }
+    
   }
+  
+  
 }
 }
-
-
-
+}
