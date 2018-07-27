@@ -4,16 +4,70 @@
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
+    @include media-breakpoint-down(sm) {
+      //font-size: .7rem;
+
+ }
   }
   
   h2{
     font-weight: 600;
     padding-bottom: 40px;
+    @include media-breakpoint-down(md) {
+      font-size: 1.3rem;
  }
+   @include media-breakpoint-down(sm) {
+  font-size: 1.1rem;
+}
+}
  p{
    color: $text-color-gray;
    padding-bottom: 30px;
- }
- 
+   @include media-breakpoint-down(md) {
+    font-size: .8rem;
 }
+ }
+ button{
+  @include media-breakpoint-down(md) {
+    margin: 0px 0 -35px 0;
+  }
+  @media screen  and (max-width: 570px){
+margin-bottom: 30px;
+margin-top: -20px;
+  }
+  }
+
+.break{
+  @media screen  and (max-width: 570px){
+   display: none;
+      }
+}
+
+ &__img{
+   width: 450px;
+   height: 410px;
+   display: block;
+   justify-content: flex-end;
+   margin-left: 87px;
+    
+  
+   @include media-breakpoint-down(md) {
+    width: 280px;
+    height: 320px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  @media screen  and (max-width: 570px){
+    /*display: flex;
+    justify-content: center;
+    align-self: center;*/
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+  
+}
+  }
