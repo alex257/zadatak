@@ -7736,83 +7736,81 @@ header {
         margin-bottom: 40px;
         margin-top: 0; } }
 
-.gallery {
-  /*.active::before{
-    background-color: rgba( grey, .5);
-    content: '';
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    opacity: 1;
-    pointer-events: none;
-    position: absolute;
-    transition: all .4s 0s cubic-bezier(0.7, 0, 0.3, 1)
-  }*/
-  /*&__item--more{
-    z-index: 999;
-  }*/ }
-  .gallery .fa-long-arrow-alt-left {
-    position: relative;
-    color: black; }
-  .gallery .fa-long-arrow-alt-left:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 26px;
-    top: -10px;
-    bottom: 0;
-    width: 1.5px;
-    height: 40px;
-    background-color: rgba(169, 169, 169, 0.3); }
-  .gallery .fa-long-arrow-alt-right {
-    color: black; }
-  .gallery__item {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative; }
-  .gallery__pictures {
-    min-width: 100%;
-    margin-top: 50px; }
-  .gallery__item--first {
-    height: 500px; }
-  .gallery .hover-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-    -webkit-transition: opacity ease-out 250ms;
-    transition: opacity ease-out 250ms; }
-  .gallery h4 {
-    font-weight: 600; }
-    @media (max-width: 767.98px) {
-      .gallery h4 {
-        font-size: 1.1rem; } }
-  .gallery a {
-    text-decoration: none; }
-  .gallery .fa-link {
-    padding: 15px;
-    background-color: #ff6a49;
-    margin-right: 7px;
-    margin-bottom: 30px;
-    color: white; }
-  .gallery .fa-search-plus {
-    padding: 12px;
-    margin-bottom: 30px;
-    border: 3px solid white;
-    color: white; }
-  .gallery__img {
-    max-width: 100%;
-    display: block;
-    -webkit-transition: opacity ease-out 250ms;
-    transition: opacity ease-out 250ms; }
-  .gallery .gallery__item:hover .gallery__img {
-    opacity: .9; }
-  .gallery .gallery__item:hover .hover-div:hover {
-    opacity: 1; }
+.gallery .fa-long-arrow-alt-left {
+  position: relative;
+  color: black; }
+
+.gallery .fa-long-arrow-alt-left:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 26px;
+  top: -10px;
+  bottom: 0;
+  width: 1.5px;
+  height: 40px;
+  background-color: rgba(169, 169, 169, 0.3); }
+
+.gallery .fa-long-arrow-alt-right {
+  color: black; }
+
+.gallery__item {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative; }
+
+.gallery__pictures {
+  min-width: 100%;
+  margin-top: 50px; }
+
+.gallery__item--first {
+  height: 500px; }
+
+.gallery .hover-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms; }
+
+.gallery h4 {
+  font-weight: 600; }
+  @media (max-width: 767.98px) {
+    .gallery h4 {
+      font-size: 1.1rem; } }
+
+.gallery a {
+  text-decoration: none; }
+
+.gallery .fa-link {
+  padding: 15px;
+  background-color: #ff6a49;
+  margin-right: 7px;
+  margin-bottom: 30px;
+  color: white; }
+
+.gallery .fa-search-plus {
+  padding: 12px;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  color: white; }
+
+.gallery__img {
+  max-width: 100%;
+  display: block;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms; }
+
+.gallery .gallery__item:hover .gallery__img {
+  opacity: .9; }
+
+.gallery .gallery__item:hover .hover-div:hover {
+  opacity: 1; }
 
 @media (max-width: 991.98px) {
   .gallery .hidden {
@@ -7923,18 +7921,14 @@ header {
       bottom: 40.9%;
       left: 3.5%; } }
 
-.blog__date--third {
-  /*@media screen and (max-width: 480px){
-      bottom: 41%;
-      left: 3.5%;
-    }*/ }
-  @media (max-width: 767.98px) {
-    .blog__date--third {
-      bottom: 31%; } }
-  @media screen and (max-width: 480px) {
-    .blog__date--third {
-      bottom: 38%;
-      left: 3.5%; } }
+@media (max-width: 767.98px) {
+  .blog__date--third {
+    bottom: 31%; } }
+
+@media screen and (max-width: 480px) {
+  .blog__date--third {
+    bottom: 38%;
+    left: 3.5%; } }
 
 .blog__date span:first-child {
   font-size: 1.6rem;

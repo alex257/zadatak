@@ -26,17 +26,7 @@
     padding: 0;
     position: relative;
   }
-  /*.active::before{
-    background-color: rgba( grey, .5);
-    content: '';
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    opacity: 1;
-    pointer-events: none;
-    position: absolute;
-    transition: all .4s 0s cubic-bezier(0.7, 0, 0.3, 1)
-  }*/
+  
   &__pictures{
     min-width: 100%;
     margin-top: 50px;
@@ -50,9 +40,7 @@
 }
 
   }
-  /*&__item--more{
-    z-index: 999;
-  }*/
+  
   .hover-div{
     position: absolute;
     top: 50%;
