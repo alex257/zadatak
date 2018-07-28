@@ -187,6 +187,7 @@ header{
   left: 50px;
   border: 1px solid #63718c;
   padding: 20px;
+  color: white;
   @include media-breakpoint-down(md) {
     font-size: .7rem;
     padding: 10px;
@@ -199,6 +200,7 @@ header{
   right: 50px;
   border: 1px solid #63718c;
   padding: 20px;
+  color: white;
   @include media-breakpoint-down(md) {
     font-size: .7rem;
     padding: 10px;
@@ -262,9 +264,9 @@ span.active{
   @include media-breakpoint-down(lg) {
     display: block;
 }
-  @include media-breakpoint-down(lg) {
+  /*@include media-breakpoint-down(md) {
   display: none;
-}
+}*/
 }
 }
   &__column--fourth{
@@ -369,7 +371,7 @@ span.active{
     letter-spacing: .9px;
     @include media-breakpoint-down(lg) {
       font-size: .6rem;
-      margin-left: 22px;
+      //margin-left: 8px;
     }
     @include media-breakpoint-down(md) {
       font-size: .6rem;
@@ -388,6 +390,7 @@ span.active{
    
   .fa-long-arrow-alt-left{
     position: relative;
+    color: white;
   }
 
   .fa-long-arrow-alt-left:after{
@@ -407,6 +410,9 @@ span.active{
       height: 30px;
      }
     
+  }
+  .fa-long-arrow-alt-right{
+    color: white;
   }
   
   

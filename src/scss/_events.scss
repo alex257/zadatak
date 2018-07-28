@@ -15,36 +15,69 @@
       margin-bottom: 25px;
     }
     &__date{
-      width: 73px;
+      width: auto;
       height: auto;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 5px;
     } 
+  }
     &__date span:first-child{
       font-size: 1.8rem;
       padding: 10px 10px 0 10px;
       font-weight: 600;
       display: inline-block;
+      @include media-breakpoint-down(lg) {
+        //font-size: 1.5rem;
+      }
     }
     &__date span:nth-child(2){
       font-size: .6rem;
       padding: 0 10px 20px 10px;
       margin-top: -6px;
       font-weight: 600;
+      
     }
+
+    &__row{
+      @include media-breakpoint-down(md) {
+        margin-bottom: 50px;
+    }
+  }
+  &__row--first{
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
+  }
+
+}
 
     i{
     margin: 20px 25px 40px 25px;
     font-size: 1.2rem;
+    @include media-breakpoint-down(sm) {
+      font-size: .9rem;
+      margin: 10px 15px 20px -39px;
     }
+    @media screen and (max-width: 550px){
+      display: none;
+    }
+  }
     p{
     margin-top: 15px;
     font-size: 0.8rem;  
     }
     h5{
       font-weight: 600;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 550px){
+        font-size: 1rem;
+      }
     }
     h6{
       padding-bottom: 40px;
     }
-  }                 
-}
+  }  
+}               
+
 

@@ -16,7 +16,44 @@
     position: absolute;
     bottom: 48.4%;
     left: 4%;
+    @include media-breakpoint-down(lg) {
+      bottom: 56%;
+      left: 4.4%;
+    }
+    @include media-breakpoint-down(md) {
+      bottom: 65.5%;
+      left: 5.9%;
+      
+    }
+    @include media-breakpoint-down(sm) {
+      bottom: 34.3%;
+      left: 2.8%;
+    }
+    @media screen and (max-width: 550px){
+      bottom: 50.5%;
+      left: 3.8%;
+    }
+    
+    @media screen and (max-width: 480px){
+      bottom: 40.9%;
+      left: 3.5%;
+    }
   }
+
+  &__date--third{
+    @include media-breakpoint-down(sm) {
+      bottom: 31%;
+    }
+    @media screen and (max-width: 480px){
+      bottom: 38%;
+      left: 3.5%;
+    }
+    /*@media screen and (max-width: 480px){
+      bottom: 41%;
+      left: 3.5%;
+    }*/
+  }
+
   &__date span:first-child{
     font-size: 1.6rem;
     //padding: 10px 10px 0 10px;
@@ -34,4 +71,13 @@
   p{
     font-size: .9rem;
   }
+  i{
+  color: black;
+  }
+
+  .author{
+    @include media-breakpoint-down(md) {
+      margin-top: -25px;
+  }
+}
 }

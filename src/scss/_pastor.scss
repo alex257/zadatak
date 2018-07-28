@@ -8,21 +8,54 @@ section#pastor{
   padding: 100px 0;
   
   color: white;
-  .pastor{
-    
 
+  .pastor{
+   display: flex;
+   
+   @include media-breakpoint-down(md) {
+    flex-direction: column;
+   }
+
+   &__row--pastor-img{
+     //flex-direction: row;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 70px;
+      //flex-direction: column;
+   }
+  }
   h6{
     padding-bottom: 40px;
+    margin-left: 40px;
   }
   .line{
     background-color: white; 
+    //margin-right: 80px;
+
   }
   h2{
     //position: relative;
     font-size: 2.2rem;
     padding-bottom: 25px;
+    padding-left: 10px;
     i{
       font-size: .9rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 1.9rem;
+      margin-left: 35px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+      //margin-left: 20px;
+      //margin-top: 15px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+      //margin-left: 20px;
+      //margin-top: 15px;
     }
   }
   h2:before{
@@ -33,7 +66,34 @@ section#pastor{
     content: close-quote;
    
   }
+  .break{
+    @include media-breakpoint-down(md) {
+      display: none;
+  }
+}
+
+ img{
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
+
+ }
+  cite{
+    padding-left: 10px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 35px;
+    }
+    @include media-breakpoint-down(md) {
+    //font-size: .rem;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
   &__podcast{
+    
+  
+    
     i{
     border: 1px solid white;
     padding: 15px;
@@ -47,6 +107,7 @@ section#pastor{
     h5{
       font-weight: 700;
       font-size: .97rem;
+
     }
     .progress{
       width: 100%;
@@ -74,6 +135,18 @@ section#pastor{
       margin-top: 5px;
       //display: block;
     }
+    
+    .break{
+      display: none;
+      @media screen and (max-width: 650px){
+        .break{
+          display: block;
+        }
+       }
+    }
   }
 }
 }
+
+
+
