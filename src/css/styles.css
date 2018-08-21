@@ -1993,10 +1993,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+  -webkit-transition: none;
+  transition: none; }
   @media screen and (prefers-reduced-motion: reduce) {
     .btn {
       -webkit-transition: none;
@@ -7261,12 +7259,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden; }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
 .btn {
   border-radius: 0.1em;
   font-family: 'Montserrat', sans-serif; }
 
 .btn:hover {
-  border: none; }
+  border: 1px solid white; }
 
 .btn-primary {
   color: #fff;
@@ -7275,9 +7278,7 @@ body {
 
 .btn-primary:hover {
   background-color: rgba(255, 106, 73, 0.8);
-  border: none;
-  border-color: transparent;
-  outline: none; }
+  border-color: rgba(255, 106, 73, 0.8); }
 
 .btn--small {
   padding: 0.3rem 1rem;
@@ -7884,74 +7885,69 @@ header {
   .fluid-events .events h6 {
     padding-bottom: 40px; }
 
-.blog h6 {
-  padding-bottom: 40px; }
-
-.blog h5 {
-  padding: 25px 0;
-  font-weight: 600; }
-
-.blog img {
-  width: 100%;
-  display: block;
-  position: relative; }
-
-.blog__date {
-  position: absolute;
-  bottom: 48.4%;
-  left: 4%; }
-  @media (max-width: 1199.98px) {
-    .blog__date {
-      bottom: 56%;
-      left: 4.4%; } }
+.blog {
+  /*&__date--third{
+    @include media-breakpoint-down(sm) {
+      bottom: 31%;
+    }
+    @media screen and (max-width: 480px){
+      bottom: 38%;
+      left: 3.5%;
+    }
+   
+  }*/ }
+  .blog h6 {
+    padding-bottom: 40px; }
+  .blog h5 {
+    padding: 25px 0;
+    font-weight: 600; }
+  .blog img {
+    width: 100%;
+    display: block; }
+  .blog__relative-div {
+    position: relative; }
+  .blog__date {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media (max-width: 1199.98px) {
+      .blog__date {
+        bottom: 56%;
+        left: 4.4%; } }
+    @media (max-width: 991.98px) {
+      .blog__date {
+        bottom: 0;
+        left: 0; } }
+    @media (max-width: 767.98px) {
+      .blog__date {
+        bottom: 0;
+        left: 0; } }
+    @media screen and (max-width: 550px) {
+      .blog__date {
+        bottom: 0;
+        left: 0; } }
+    @media screen and (max-width: 480px) {
+      .blog__date {
+        bottom: 0;
+        left: 0; } }
+  .blog__date span:first-child {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    color: white; }
+  .blog__date span:nth-child(2) {
+    font-size: .5rem;
+    padding: 0 10px 5px 10px;
+    margin-top: -6px;
+    font-weight: 600;
+    color: white; }
+  .blog p {
+    font-size: .9rem; }
+  .blog i {
+    color: black; }
   @media (max-width: 991.98px) {
-    .blog__date {
-      bottom: 65.5%;
-      left: 5.9%; } }
-  @media (max-width: 767.98px) {
-    .blog__date {
-      bottom: 34.3%;
-      left: 2.8%; } }
-  @media screen and (max-width: 550px) {
-    .blog__date {
-      bottom: 50.5%;
-      left: 3.8%; } }
-  @media screen and (max-width: 480px) {
-    .blog__date {
-      bottom: 40.9%;
-      left: 3.5%; } }
-
-@media (max-width: 767.98px) {
-  .blog__date--third {
-    bottom: 31%; } }
-
-@media screen and (max-width: 480px) {
-  .blog__date--third {
-    bottom: 38%;
-    left: 3.5%; } }
-
-.blog__date span:first-child {
-  font-size: 1.6rem;
-  font-weight: 600;
-  display: inline-block;
-  color: white; }
-
-.blog__date span:nth-child(2) {
-  font-size: .5rem;
-  padding: 0 10px 5px 10px;
-  margin-top: -6px;
-  font-weight: 600;
-  color: white; }
-
-.blog p {
-  font-size: .9rem; }
-
-.blog i {
-  color: black; }
-
-@media (max-width: 991.98px) {
-  .blog .author {
-    margin-top: -25px; } }
+    .blog .author {
+      margin-top: -25px; } }
 
 section#pastor {
   margin-bottom: 0; }
@@ -8140,8 +8136,9 @@ section#pastor {
   padding: 30px 0 15px 0;
   margin-top: -100px; }
   .footer__div {
-    width: 21px;
+    width: 23px;
     height: 23px;
+    line-height: 23px;
     border-radius: 50%;
     background: rgba(211, 211, 211, 0.4);
     margin-right: 15px; }

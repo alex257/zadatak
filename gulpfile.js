@@ -7,7 +7,7 @@ const gulp         = require('gulp');
       concat       = require('gulp-concat');
       sourcemaps   = require('gulp-sourcemaps');
       rename       = require("gulp-rename");
-      imagemin     = require('gulp-imagemin');
+      //imagemin     = require('gulp-imagemin');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -75,13 +75,13 @@ gulp.task('copyHtml', function(){
         .pipe(gulp.dest('dist'));
   });
 
-// Optimize Images
+/*// Optimize Images
 gulp.task('imageMin', () =>
 	gulp.src('src/img/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/img'))
-);
+);*/
 
-gulp.task('default', ['serve', 'minify-css','scripts', 'copyHtml','imageMin']);
+gulp.task('default', ['serve', 'minify-css','scripts', 'copyHtml']);
 
 
