@@ -1,4 +1,4 @@
-import './css/main.scss'
+import './scss/main.scss'
 
 import $ from "jquery";
 import popper from "popper.js";

@@ -1,0 +1,37 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "abstracts": "^0.2.3",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "postcss-modules": "^1.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.1",
+    "sass": "^1.23.6"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex257/zadatak.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex257/zadatak/issues"
+  },
+  "homepage": "https://github.com/alex257/zadatak#readme",
+  "description": ""
+}
