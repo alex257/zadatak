@@ -1,0 +1,28 @@
+// Variable Overrides 
+
+$theme-colors: (
+  "primary": #ff6a49,
+  "secondary": #777988
+  );
+ 
+//Bootstrap sass files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+//
+@import "abstracts/variables";
+
+@import "base/base";
+@import "layouts/header";
+@import "sections/welcome";
+@import "sections/community";
+@import "sections/gallery";
+@import "sections/events";
+@import "sections/blog";
+@import "sections/pastor";
+@import "sections/contact";
+@import "layouts/footer";
+
+
+
+
